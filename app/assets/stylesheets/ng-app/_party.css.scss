@@ -1,0 +1,42 @@
+.party-first-name {
+  font-family: 'Mission Gothic Thin', sans-serif;
+}
+
+.groomsman .party-first-name, .bridesmaid .party-first-name {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.fadeOut, .fadeIn, .mainImg {
+  -webkit-transition: opacity .25s ease-in-out;
+  -moz-transition:    opacity .25s ease-in-out;
+  -ms-transition:     opacity .25s ease-in-out;
+  transition:         opacity .25s ease-in-out;
+}
+
+.mainImg:hover { opacity: 0; }
+
+.party-img-lg { 
+  max-width: 359px;
+  margin-left: 15px;
+}
+
+.party-img-sm { 
+  max-width: 163px;
+  margin-left: 15px;
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+ 
+.caption {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}

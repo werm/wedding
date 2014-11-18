@@ -1,0 +1,359 @@
+<section id="home" name="home"></section>
+<div id="headerwrap">
+  <h1>CRAIG &amp; NICOLE</h1>
+</div><!--/headerwrap -->
+
+<section id="about" class="container" ng-controller="PeopleCtrl">
+  <div class="row" ng-repeat="person in people">
+    <div class="col-sm-4 name">
+      <img ng-src="{{ person.photo }}" class="img-responsive" >
+      <p>{{person.name}}</p>
+      <div class="name-label"></div>
+    </div>
+    <div class="col-sm-8 name-desc">
+      <h2>{{person.title }}</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="name-zig"></div>
+        </div>
+      </div>
+      <div ng-bind-html="person_description(person.description)"></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="sep">
+  <img image-lazy-src="assets/engagement_deck.jpg" class="img-responsive" alt="" du-parallax y="background" />
+</div>
+
+  <section id="party" name="party" class="container" ng-controller="PartyCtrl">
+  <div id="partywrap">
+    <div class="container">
+      <div class="row">
+        <h1 class="sectionHead centered">WEDDING PARTY</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-md-offset-1 col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-image hide-panel-body">
+              <img src="assets/Conor.jpg" class="panel-image-preview img-responsive" alt="">
+            </div>
+            <div class="panel-footer text-center">
+              <h4 class="party-first-name">Conor</h4>
+              <h3>Kinsella</h3>
+              <hr>
+              <h5>Best Man</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-md-offset-2 col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-image hide-panel-body">
+              <img src="assets/Sonia.jpg" class="panel-image-preview img-responsive" alt="">
+            </div>
+            <div class="panel-footer text-center">
+              <h4 class="party-first-name">Sonia</h4>
+              <h3>Kriemer</h3>
+              <hr>
+              <h5>Matron of Honor</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1 col-sm-3">
+          <div class="panel panel-default groomsman">
+            <div class="panel-image hide-panel-body">
+              <img src="assets/Justin.jpg" class="panel-image-preview img-responsive" alt="">
+            </div>
+            <div class="panel-footer text-center">
+              <h4 class="party-first-name">Justin</h4>
+              <h3>DeBrosse</h3>
+              <hr class="m_half">
+              <h5>Groomsman</h5>
+            </div>
+          </div>
+        </div>
+   
+        <div class="col-md-2 col-sm-3">
+          <div class="panel panel-default groomsman">
+            <div class="panel-image hide-panel-body">
+              <img src="assets/Jack.jpg" class="panel-image-preview img-responsive" alt="">
+            </div>
+            <div class="panel-footer text-center">
+              <h4 class="party-first-name">Jack</h4>
+              <h3>Mulichak</h3>
+              <hr class="m_half">
+              <h5>Groomsman</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-md-offset-2 col-sm-3">
+          <div class="panel panel-default bridesmaid">
+            <div class="panel-image hide-panel-body">
+              <img src="assets/Mandy.jpg" class="panel-image-preview img-responsive" alt="">
+            </div>
+            <div class="panel-footer text-center">
+              <h4 class="party-first-name">Amanda</h4>
+              <h3>M<sup>c</sup>Cann</h3>
+              <hr class="m_half">
+              <h5>Bridesmaid</h5>
+            </div>
+          </div>
+        </div>      
+        <div class="col-md-2 col-sm-3">
+          <div class="panel panel-default bridesmaid">
+            <div class="panel-image hide-panel-body">
+              <img src="assets/Thea.jpg" class="panel-image-preview img-responsive" alt="">
+            </div>
+            <div class="panel-footer text-center">
+              <h4 class="party-first-name">Thea</h4>
+              <h3>Mulichak</h3>
+              <hr class="m_half">
+              <h5>Bridesmaid</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep">
+  <!-- <img image-lazy-src="assets/engagement_deck.jpg" class="img-responsive" alt="" du-parallax y="background" /> -->
+  <img img-lazy-src="assets/park.min.jpg" class="img-responsive" alt="" du-parallax y="background" />
+</div>
+
+<!-- DETAILS SECTION -->
+<section id="details" name="details"></section>
+<div id="detailwrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8-offset-2 centered">
+        <h1 class="sectionHead">AN OVERVIEW OF THE FESTIVITIES</h1>
+        <h3 class="text-muted">When, where, etc.</h3>
+      </div><!-- /col-lg-8 -->
+    </div><!--/row -->
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="centered">Please join us at a reception celebrating our marriage!</h2>
+      </div>
+    </div>
+    <div class="row mt">
+      <div class="detail">
+        <div class="col-md-3 col-lg-3 date">
+          <div class="embiggen">
+            <p data-fittext class="light">SATURDAY</p>
+            <p data-fittext class="bold">may ninth</p>
+            <p data-fittext class="bold">two thousand and fifteen</p>
+            <p data-fittext>SIX O'CLOCK</p>
+            <img src="assets/ohio.svg" data-fallback-image="assets/ohio.png" role="presentation" class="img-responsive">
+          </div>
+        </div>
+        <div class="col-md-9 col-lg-9">
+          <section id="map" ng-controller="VenueMapCtrl">
+            <leaflet defaults="defaults" center="center" markers="markers" height="480px" id="venueMap"></leaflet>
+            <address>
+              <strong>Vue</strong> <br>95 Liberty Street, Columbus, OH 43215
+            </address> 
+          </section>
+        </div>
+      </div>
+    </div>
+
+  <hr id="detailshotel" name="detailshotel">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="centered secondary">HOTEL ACCOMODATIONS</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 hotelDetails" ng-controller="HotelsMapCtrl">
+      <p class="lead">
+        UPDATE: If you are planning on booking a hotel, worry no more! We now have reserved blocks of rooms at the following hotels. Be sure to book your rooms now! Rooms at the specified rates are limited due to OSU's graduation (we know it shouldn't take precedence over our wedding, but we don't rule the world). There is a likelihood we will not be able to increase any blocks, so be sure to secure your reservation early.</p>
+
+        <div id="hotel_details_sep" class="scroll_sep"></div>
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h3 class="page-header mt0">
+              Courtyard Columbus Downtown
+              <button type="button" class="btn btn-primary pull-right" ng-click="showCy('hotels_sep')">
+                <i class="fa fa-map-marker"></i> View On Map
+              </button>
+            </h3>
+            <p>Call the toll free reservation line at 1-800-MARIOTT and identify yourself as a member of the <strong>Kulick Wermert Wedding Group</strong>.</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong>Rate without Parking</strong><br> $129/night
+              </li>
+              <li class="list-group-item">
+                <strong>Rate with Discounted Parking</strong><br> $144/night
+              </li>
+              <li class="list-group-item">
+                <strong>Book Before</strong><br> April 6<sup>th</sup>, 2015
+              </li>
+            </ul>
+
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h3 class="page-header mt0">
+              Holiday Inn Columbus Downtown Capitol Square
+              <button type="button" class="btn btn-primary pull-right" ng-click="showHi('hotels_sep')">
+                <i class="fa fa-map-marker"></i> View On Map
+              </button>
+            </h3>
+            <p><a class="btn btn-success" target="_blank" href="http://www.holidayinn.com/redirect?path=hd-local-city-guide-directions&brandCode=hi&localeCode=en&regionCode=1&hotelCode=CMHET&_PMID=99801505&GPC=KWW">Reserve your room online.</a></p>
+            <ul class="list-group">
+              <li class="list-group-item"><strong>Rate</strong><br> $119/night</li>
+              <li class="list-group-item"><strong>Parking</strong><br> $12 daily rate with in/out privileges</li>
+              <li class="list-group-item">
+                <strong>Book Before</strong><br> April 8<sup>th</sup>, 2015
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12">
+            <div id="hotels_sep" class="scroll_sep"></div>
+            <section id="hotels_map">
+              <leaflet defaults="defaults" center="center" options="options" markers="markers" height="480px" id="hotelsMap"></leaflet>
+            </section>
+          </div>
+        </div>
+
+        <p>Shuttle services will be available for guests to and from these hotels on the day of our wedding to enjoy the festivities. Guests will receive detailed information at hotel check in.</p>
+
+        <p>If you would prefer to drive to and from the reception, we have secured the lot located behind the venue and self parking will be free of charge.</p>
+        <p><a href="#" class="btn btn-primary" ng-click="showParking = !showParking">View Parking Map</a></p>
+
+        <div class="col-sm-12 fx-fade-down" ng-if="showParking">
+          <img ng-src="assets/parking_map.jpg" class="img-responsive" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr id="details_attire" name="details_attire">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="centered secondary">ATTIRE</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p class="lead">
+          The only thing that we really want (outside of a marriage filled with everlasting puppy love and rainbows and stuff), is for you to be comfortable. This isn't a black tie event, but if that's what you want to wear, go for it! It'd be nice if you left the jeans at home, though.
+        </p>
+      </div>
+    </div>
+  
+  <hr id="details_registry" name="details_registry">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 class="centered secondary">REGISTRY</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="http://www.kohls.com/upgrade/gift_registry/kohlsgrw_home.jsp?section=list&listid=2855461&viewtype=listview&isfromsearch=true&fname=nicole&lname=kulick&regtype=registry.wedding,registry.baby,registry.splday" target="_blank">
+        <img ng-src="assets/kohls.png" alt="">
+      </a>
+    </div>
+    <div class="col-sm-6">
+      <a href="http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=541638879&pwsurl=">
+        <img ng-src="assets/bed-bath-and-beyond.png" alt="">
+      </a>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="sep cheek">
+  <img image-lazy-src="assets/kiss_on_cheek.jpg" alt="" du-parallax y="cheek" />
+</div>
+
+<div ng-controller="TimelineCtrl">
+  <section id="timeline" name="timeline"></section>
+  <div class="container-fluid timeline-container">
+    <div class="page-header">
+      <h1 class="sectionHead centered" id="timeline">OUR STORY</h1>
+    </div>
+    <ul class="timeline">
+      <li ng-repeat="s in stories" ng-class-even="'timeline-inverted'">
+        <div class="timeline-badge" style="background-color: {{s.iconColor}}"><i class="icon icon-{{s.icon}}"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h3 class="timeline-title">{{s.title}}</h3>
+            <p><small class="text-muted"><i class="fa fa-clock-o"></i> {{s.time}}</small></p>
+          </div>
+          <div class="timeline-body">
+            <p ng-bind-html="story_content(s.content)"></p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="sep">
+  <img src="assets/blank.jpg" class="img-responsive" alt="" du-parallax y="background" data-echo="assets/dancing.min.jpg" />
+</div>
+
+<div ng-controller="ContactCtrl">
+  <div id="contactwrap">
+    <div class="row">
+      <h1 class="sectionHead centered">CONTACT US</h1>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+          <form class="form-horizontal" id="new_contact" ng-hide="messageSuccess" ng-submit="sendEmail(contact)">
+            <fieldset>
+              <div class="input string required contact_name form-group">
+                <label class="string required col-sm-2 control-label" for="contact_name"><abbr title="required">*</abbr> Name</label>
+                <div class="col-sm-10">
+                  <input aria-required="true" class="string required col-sm-10 form-control" id="contact_name" name="contact[name]" required="required" type="text" ng-model="contact.name">
+                </div>
+                </div>
+              <div class="input email required contact_email form-group">
+                <label class="email required col-sm-2 control-label" for="contact_email"><abbr title="required">*</abbr> Email</label>
+                <div class="col-sm-10">
+                  <input aria-required="true" class="string email required form-control" id="contact_email" name="contact[email]" required="required" type="email" ng-model="contact.email">
+                </div>
+              </div>
+              <div class="input text optional contact_message form-group">
+                <label class="text optional col-sm-2 control-label" for="contact_message">Message</label>
+                <div class="col-sm-10">
+                  <textarea class="text optional col-sm-10 form-control" id="contact_message" name="contact[message]" rows="10" ng-model="contact.message"></textarea>
+                </div>
+              </div>
+            <div class="form-actions form-group">
+              <div class="col-sm-10 col-sm-offset-2">
+                <input class="button btn btn-primary" name="commit" type="submit" value="Send message" ng-hide="sending">
+                <button class="button btn btn-primary" disabled="" ng-show="sending">
+                  <i class="fa fa-circle-o-notch fa-spin"></i> Sending
+                </button>
+              </div>
+            </div>
+            </fieldset>
+          </form>
+        </div>
+      </div><!-- row -->
+      <div class="row" ng-show="messageSuccess">
+        <div class="col-sm-12">
+          <div class="successMessage">
+            <img ng-src="assets/thanks.jpg" class="img-responsive" alt="">
+          </div>
+        </div>
+      </div>
+    </div><!-- container -->
+  </div>
+</div>
