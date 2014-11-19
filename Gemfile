@@ -27,10 +27,7 @@ gem 'bower-rails'
 gem 'angular-rails-templates'
 gem 'mandrill-api'
 
-gem 'capistrano', '~> 3.1.0'
-gem 'capistrano-bundler', '~> 1.1.2'
-gem 'capistrano-rails', '~> 1.1.1'
-gem 'capistrano-rvm', github: "capistrano/rvm"
+gem 'dotenv-deployment'
 
 group :development do
   gem 'thin'
@@ -39,6 +36,11 @@ group :development do
   gem 'binding_of_caller'
   gem 'quiet_assets'
   gem 'spring'
+  gem 'capistrano',         require: false
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
 end
 
 
