@@ -2,8 +2,8 @@
 server 'dev.craigandnic.com', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:werm/wedding.git'
-set :application,     'appname'
-set :user,            'username'
+set :application,     'wedding'
+set :user,            'deployer'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
