@@ -184,6 +184,7 @@ DEPENDENCIES
   jquery-rails
   mandrill-api
   pg
+  puma
   quiet_assets
   rails (= 4.1.6)
   sass-rails (~> 4.0.3)
