@@ -63,6 +63,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, false
 set :puma_preload_app, true
 set :puma_prune_bundler, false
+set :puma_bind, %w(tcp://0.0.0.0:9292 unix:///tmp/puma.sock)
 
 namespace :deploy do
 
