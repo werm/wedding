@@ -27,7 +27,7 @@ gem 'angular-rails-templates'
 gem 'mandrill-api'
 gem 'dotenv-deployment'
 gem 'foreman'
-gem 'puma'
+gem 'unicorn'
 
 group :development do
   gem 'thin'
@@ -40,7 +40,7 @@ group :development do
   gem 'capistrano-rvm',     require: false
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma', github: "seuros/capistrano-puma", require: false
+  #gem 'capistrano3-puma', github: "seuros/capistrano-puma", require: false
 end
 
 
