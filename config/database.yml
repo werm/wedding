@@ -15,8 +15,9 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
-  encoding: unicode
+  # adapter: postgresql
+  adapter: mysql2
+  encoding: utf8
   username: <%= ENV['DEVDB_USERNAME'] %>
   password: <%= ENV['DEVDB_PASSWORD'] %>
   # For details on connection pooling, see rails configuration guide

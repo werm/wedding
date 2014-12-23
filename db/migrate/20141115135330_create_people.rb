@@ -1,12 +1,14 @@
 class CreatePeople < ActiveRecord::Migration
   def change
-    create_table :people do |t|
-      t.string :name
-      t.string :title
-      t.text :description
-      t.string :photo
+    if !ActiveRecord::Base.connection.table_exists? 'people'
+      create_table :people do |t|
+        t.string :name
+        t.string :title
+        t.text :description
+        t.string :photo
 
-      t.timestamps
+        t.timestamps
+      end
     end
   end
 end

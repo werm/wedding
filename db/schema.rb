@@ -13,13 +13,10 @@
 
 ActiveRecord::Schema.define(version: 20141115171627) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "people", force: true do |t|
     t.string   "name"
-    t.string   "title"
-    t.text     "description"
+    t.string   "description"
+    t.text     "about"
     t.string   "photo"
     t.datetime "created_at"
     t.datetime "updated_at"
