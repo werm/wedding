@@ -11,5 +11,12 @@ module Wedding
     config.assets.paths << Rails.root.join("app","assets","fonts")
     config.assets.paths << Rails.root.join("lib","assets","bower_components","bootstrap-sass-official", "assets", "stylesheets")
     config.assets.paths << Rails.root.join("lib","assets","bower_components","bootstrap-sass-official", "assets","fonts")
+    config.before_initialize do |app|
+      require 'sprockets'
+      require 'angular-rails-templates'
+
+      Sprockets::Engines #force autoloading
+      Sprockets.register_engine '.html', AngularRailsTemplates::Template
+    end
   end
 end
