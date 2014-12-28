@@ -15,7 +15,6 @@
 //= require angular
 //= require angular-animate
 //= require angular-ui-router
-//= require angular-rails-templates
 //= require angular-scroll
 //= require angular-bootstrap
 //= require lodash

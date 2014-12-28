@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'bower-rails'
-gem 'angular-rails-templates'
+# gem 'angular-rails-templates'
 gem 'mandrill-api'
 gem 'dotenv-deployment'
 gem 'foreman'
